@@ -110,13 +110,13 @@ def extract_details(url, generate_report, non_strict):
         for phone in extracted_phone_numbers:
             print(phone)
 
-    if extracted_phone_numbers2 != extracted_phone_numbers:
+    if extracted_phone_numbers2 and (extracted_phone_numbers2 != extracted_phone_numbers):
         if not extracted_phone_numbers:
             print(colored("\n[+] Phone Numbers:", "cyan"))
         for phone in extracted_phone_numbers2:
             print(phone)
 
-    if extracted_phone_numbers3 != extracted_phone_numbers or extracted_phone_numbers2:
+    if extracted_phone_numbers3 and (extracted_phone_numbers3 != extracted_phone_numbers or extracted_phone_numbers2):
         if not extracted_phone_numbers and extracted_phone_numbers2:
             print(colored("\n[+] Phone Numbers:", "cyan"))
         for phone in extracted_phone_numbers3:
