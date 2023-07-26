@@ -95,7 +95,7 @@ def extract_details(url, generate_report, non_strict):
                 for location in geolocations:
                     report_file.write(location + '\n')
 
-    if extracted_emails or extracted_phone_numbers or extracted_usernames:
+    if extracted_emails or extracted_phone_numbers or extracted_phone_numbers2 or extracted_phone_numbers3 or extracted_usernames:
         print(colored("\n----------Non-Hyperlinked Details----------", "yellow"))
 
     if extracted_emails:
